@@ -1,0 +1,28 @@
+.coin_img {
+  width: 3rem;
+}
+
+.coin_about {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coin_price_percentage_change_green {
+  color: green;
+}
+.coin_price_percentage_change_red {
+  color: red;
+}
+
+.table100 {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 600px) {
+  .table100 {
+    width: 90%;
+    margin: 2rem auto;
+    overflow-x: scroll;
+  }
+}

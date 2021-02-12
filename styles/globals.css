@@ -2,6 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: rgba(32, 32, 32);
+  color: aliceblue;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +15,38 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  overflow-x: scroll;
+}
+table tr th {
+  background: #162941;
+  color: white;
+  text-align: left;
+  position: sticky;
+  top: 0;
+}
+
+table tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(32, 32, 32);
+}
+
+tr:hover {
+  background-color: rgb(33, 33, 33);
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border-bottom: 1px solid snow;
 }
